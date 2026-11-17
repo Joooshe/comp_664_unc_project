@@ -1,0 +1,7 @@
+
+# image ViT from scratch
+cache_256/
+runs/
+*.pt
+__pycache__/
+crisismmd_datasplit_agreed_label/
