@@ -1,0 +1,20 @@
+
+# environment + caches
+.venv/
+uv_cache/
+hf_cache/
+ 
+# shared data: only the manifest CSV is committed
+data/*
+!data/.gitkeep
+!data/*.csv
+ 
+# per-part outputs (e.g. image/pretrained/logs, image/pretrained/results/feats)
+**/logs/*
+!**/logs/.gitkeep
+**/feats/
+*.pt
+ 
+# notebooks / python junk
+.ipynb_checkpoints/
+__pycache__/
