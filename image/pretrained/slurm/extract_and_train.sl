@@ -1,13 +1,4 @@
 #!/bin/bash
-# Frozen ViT features + linear head for ONE backbone.
-#
-# Submit from the project folder:
-#   cd ~/comp_664_unc_project
-#   sbatch image/pretrained/slurm/extract_and_train.sl                                     # default: ViT-L
-#   sbatch image/pretrained/slurm/extract_and_train.sl google/vit-base-patch16-224-in21k   # pick a model
-#
-# Or submit all three sizes at once: bash image/pretrained/slurm/submit_all.sh
-#
 #SBATCH --job-name=vit_informative
 #SBATCH --partition=l40-gpu          # 48 GB GPUs; a100-gpu or rtx6k_gpu (--qos=gpu_rtx6k) also work
 #SBATCH --qos=gpu_access
