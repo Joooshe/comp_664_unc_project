@@ -1,1 +1,2 @@
 macro_f1_score,accuracy,model
+0.7692,0.8041,multimodal_joint_param_700M
